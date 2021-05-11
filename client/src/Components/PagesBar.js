@@ -7,11 +7,11 @@ const count=3;   //total no. of pages
 function showPage(index){ 
 
    if(index===0){
-       return <History></History>  //name example of page to go to
+      // return <History></History>  //name example of page to go to
       }else if(index===1){
-       return <Reasons></Reasons>
+      // return <Reasons></Reasons>
       }else if(index===2){
-       return <CurrentState></CurrentState>
+      // return <CurrentState></CurrentState>
     }
 }
 
