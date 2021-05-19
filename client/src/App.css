@@ -1,3 +1,35 @@
+.line{
+top: 20%;
+left:60%;
+width: 129px;
+height: 8px;
+background: transparent linear-gradient(91deg, #1AFFFC 8%, #007FFF 100%) 0% 0% no-repeat padding-box;
+border-radius: 5px;
+opacity: 1;
+}
+.what{
+top: 40%;
+left: 462px;
+width: 980px;
+height: 91px;
+color: var(--unnamed-color-000000);
+text-align: center;
+font: normal normal medium 69px/91px Roboto;
+letter-spacing: 1.24px;
+color: #000000;
+text-transform: lowercase;
+opacity: 1;
+}
+.card{
+top: 50%;
+left: justify-content;
+width: 565px;
+height: 563px;
+background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 15px;
+opacity: 1;
+}
 .App {
   text-align: center;
 }
