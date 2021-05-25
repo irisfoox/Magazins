@@ -1,0 +1,88 @@
+.line{
+top: 50%;
+margin-left:250px;
+width: 129px;
+height: 3px;
+background: transparent linear-gradient(91deg, #1AFFFC 8%, #007FFF 100%) 0% 0% no-repeat padding-box;
+border-radius: 5px;
+opacity: 1;
+}
+.bars{
+  background-color: none; 
+  border: none; /* Remove borders */
+  color: grey; 
+  size: 20px;
+  cursor: pointer; /* Mouse pointer on hover */
+}
+.what{
+top: 40%;
+text-justify: auto;
+width: 980px;
+height: 91px;
+color: var(--unnamed-color-000000);
+font: normal normal medium 69px/91px Roboto;
+letter-spacing: 1.24px;
+color: #000000;
+text-transform: lowercase;
+opacity: 1;
+}
+.card-deck{
+  display: flex; 
+  align-content: center;
+  margin-bottom: 4%;
+}
+.card{
+  display: flex;
+
+background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 15px;
+opacity: 1;
+}
+.side{
+top: 0;
+left: 0px;
+width: 2%;
+background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+opacity: 1;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
