@@ -3,9 +3,9 @@ import '../App.css'
 import leader from '../pic/leader.png'
 import person from '../pic/person.png'
 import pin from '../pic/pin.png'
-import line from '../pic/line.png'
+//import line from '../pic/line.png'
 import Home from './Home'
-
+//<img src={line} alt="settings" height="2px" width="20px"></img>
 
 export default function UpperMenu() {
     return (
@@ -20,7 +20,7 @@ export default function UpperMenu() {
             <div className="col-2 pt-2 d-flex justify-content-right">
                 <img src={person} alt="user" height="20px"></img>
                 <img src={pin} alt="thumbtack" height="20px"></img>
-                <img src={line} alt="settings" height="2px" width="20px"></img>              
+                <button class="btn bars"><i class="fa fa-bars"></i></button>          
             </div>
         </div>
         <div className="row d-inline-flex" style={{width:"100%",height:"40%"}}>
