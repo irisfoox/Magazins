@@ -1,6 +1,6 @@
 .line{
 top: 20%;
-left:60%;
+align-content: center;
 width: 129px;
 height: 8px;
 background: transparent linear-gradient(91deg, #1AFFFC 8%, #007FFF 100%) 0% 0% no-repeat padding-box;
@@ -9,7 +9,7 @@ opacity: 1;
 }
 .what{
 top: 40%;
-left: 462px;
+align-items:center;
 width: 980px;
 height: 91px;
 color: var(--unnamed-color-000000);
@@ -20,14 +20,26 @@ color: #000000;
 text-transform: lowercase;
 opacity: 1;
 }
+.card-deck{
+  display: flex; 
+  align-content: center;
+  margin-bottom: 4%;
+}
 .card{
-top: 50%;
-left: justify-content;
-width: 565px;
-height: 563px;
+  display: flex;
+
 background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
 background: #FFFFFF 0% 0% no-repeat padding-box;
 border-radius: 15px;
+opacity: 1;
+}
+.side{
+top: 0;
+left: 0px;
+width: 2%;
+background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
 opacity: 1;
 }
 .App {
