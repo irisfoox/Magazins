@@ -1,10 +1,13 @@
 import React from 'react'
 import './App.css';
 import PagesBar from './Components/PagesBar'
+import UpperMenu from './Components/UpperMenu'
+//<PagesBar/>
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <UpperMenu/>
       <PagesBar/>
     </div>
   );
