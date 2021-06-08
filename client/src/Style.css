@@ -1,0 +1,60 @@
+body {
+  background-color: #e8eaec;
+  margin: 1cm;
+}
+.body {
+ 
+}
+.pic {
+  height: 45vh !important;
+  /* border: 1px solid black !important; */
+}
+.lab {
+  color: black;
+}
+.label1 {
+  font-size: 1cm;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: left;
+  top: 650px;
+  left: 250px;
+  width: 506px;
+  height: 93px;
+  /* padding-left: 3%; */
+}
+.label1 {
+  text-align: left;
+  /* text-justify  */
+}
+.b1 {
+  background-color: #4488d7 !important;
+  font-size: 120% !important;
+  letter-spacing: 0.35px !important;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+  text-transform: capitalize;
+
+  /* font-family: ; */
+}
+.white {
+  background-color: white;
+  margin: 1cm;
+}
+.ss {
+  background-color: #3a405e !important;
+  height: 70vh !important;
+  color: white;
+  /* display: flex;
+  align-items: center; */
+  border-color: #707070;
+  border-radius: 80px 0px 0px 0px;
+  text-align: right;
+  margin-right: 0%;
+}
+/* .img1 {
+  height: 40px;
+  width: 0px;
+  display: inline-block; 
+  align-items: right;
+} */
