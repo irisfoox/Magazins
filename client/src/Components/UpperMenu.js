@@ -11,8 +11,8 @@ import Home from './Home'
 export default function UpperMenu() {
     return (
         <div className="container">
-        <div className="row d-flex" style={{width:"100%",height:"5%",background: "var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box",
-          backgroundColor: "#FFFFFF 0% 0% no-repeat padding-box",boxShadow:"0px 3px 6px #00000029",opacity: "1"
+        <div className="row d-flex" style={{width:"100%",height:"5%",
+          background: "#ffffff 0% 0% no-repeat padding-box",boxShadow:"0px 3px 6px #00000029",opacity: "1"
           }}>
             <div className="col-1">
                 <img src={leader} alt="logo" height="20px"></img>
