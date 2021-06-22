@@ -5,14 +5,13 @@ const post = mongoose.Schema({
         require: true
     }, 
     subheader: {
-        type: String,
+        type: String
     }, 
     longtext: {
-        type: String,
-        require: true
+        type: String
     }, 
-    pic: {
-      
+    pic: {  
+
     }, 
     category: {
         type: mongoose.Schema.Types.ObjectId, ref: 'category'
@@ -20,8 +19,10 @@ const post = mongoose.Schema({
     date: {
         type:Date,
         default:new Date(Date.now()),
-        require: true
-    }   
+    },
+    magazinId:{
+        type: mongoose.Schema.Types.ObjectId, ref: 'magazin'
+    }
 })
 module.exports = mongoose.model('post', post);
 

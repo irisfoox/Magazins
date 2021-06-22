@@ -5,7 +5,6 @@ const pic = mongoose.Schema({
     },
     title: {
         type: String,
-        require: true
     },
     date: {
         type:Date,
@@ -17,5 +16,8 @@ const pic = mongoose.Schema({
     category: {
         type: mongoose.Schema.Types.ObjectId, ref: 'category'
     },
+    magazinId:{
+        type: mongoose.Schema.Types.ObjectId, ref: 'magazin'
+    }
 })
 module.exports = mongoose.model('pic', pic);

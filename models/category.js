@@ -8,12 +8,15 @@ const category = mongoose.Schema({
         type: String,
         require: true
     },
-    posts: [{
+    postsId: [{
         type: mongoose.Schema.Types.ObjectId, ref: 'post'
     }],
-    pic: [{
+    picId: [{
         type: mongoose.Schema.Types.ObjectId, ref: 'pic'
-    }]
+    }],
+    magazinId:{
+        type: mongoose.Schema.Types.ObjectId, ref: 'magazin'
+    }
     
 })
 module.exports = mongoose.model('category', category);
