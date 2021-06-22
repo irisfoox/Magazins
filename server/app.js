@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 
-const Router = require('./routes/api');
+const router = require('./routes/api');
 
 
 
@@ -26,7 +26,7 @@ mongoose.connect(process.env.MONGO_DB, ConectionParams)
         console.log("error: \n" + err);
     })
 app.use(bodyParser.json())
-app.use('/', Router)
+app.use('/', router)
 
 
 app.listen(8080, () => {
