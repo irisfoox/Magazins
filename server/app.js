@@ -1,9 +1,34 @@
-const express=require('express')
-const app=express();
-const router=require('./route/api');
-app.listen(8080,()=>
-{
-    console.log('listening')
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+const mongoose = require('mongoose');
+
+const Router = require('./routes/api');
+
+
+
+const ConectionParams = {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
 }
-);
-// app.use('/',route)
+
+
+
+dotenv.config();
+
+mongoose.connect(process.env.MONGO_DB, ConectionParams)
+    .then(() => {
+        console.log("db parameter")
+    }).catch((err) => {
+        console.log("error: \n" + err);
+    })
+app.use(bodyParser.json())
+app.use('/', Router)
+
+
+app.listen(8080, () => {
+    console.log("listening 8080");
+})
