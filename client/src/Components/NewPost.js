@@ -3,11 +3,9 @@ import React, { useRef, useState, useEffect } from 'react';
 import { useParams, Redirect, Link } from 'react-router-dom';
 //import Modal from 'react-awesome-modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Style from '../Style.css';
-import adjust from '../pic/adjust.png'
+//import Style from '../Style.css';
 
 export default function createPost() {
-
       return (
             <>
                   <div className="container-fluid">
@@ -20,19 +18,12 @@ export default function createPost() {
                               </div>
                               <div className="body">
                                     <div className="container-fluid">
-                                          <div className="col-10 logo mb-3">
-                                                <div className="pic">
-                                                      <div className="d-flex align-items-end flex-column" >
-                                                            {/* <div type="button" className="btn btn-primary mt-auto p-2">category</div> */}
-                                                            <div className="mt-auto p-2"><button className="b1"><b>Category</b></button></div><br></br>
-                                                            {/* btn btn-primary b1 */}
-                                                      </div>
-                                                </div>
-                                          </div>
-                                          <div className="white m-10" Style="padding-left: 5%;">
+                                              <div className="white m-10" Style="padding-left: 5%;">
                                                 <div className="row">
+                                                <h2><span class="badge badge-primary">Category</span></h2>
                                                       <div className="col-8 p-0 m-2">
                                                             <div> <p className="text-justify label1"><b>Type your post title</b></p></div>
+                                                            <input type="text" name="title" placeholder="Title"></input>
                                                       </div>
                                                 </div>
                                                 <div className="row">
