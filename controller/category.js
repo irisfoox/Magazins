@@ -1,20 +1,22 @@
 
 const Category=require('../models/category')
 
+//good
 const createCategory = async (req, res) => {
     try {
-        const magazinId = await Magazin.findById(req.params.id)
+        // const magazinId = await Magazin.findById(req.params.id)
 
         const newCategory = new Category({
             name: req.body.name,
             color: req.body.color,
-            magazinId: magazinId._id
+            // magazinId: magazinId._id
         })
 
         await newCategory.save()
+        res.status(200).json({"newCategory:":newCategory})
     }
     catch (err) {
-        res.json({ err: err })
+        res.json({ err: err.message })
     }
 }
 // const createCategoryList= async (req, res) => {
@@ -30,9 +32,9 @@ const createCategory = async (req, res) => {
 //         await newCategory.save()
 //     }
 //     catch (err) {
-//         res.json({ err: err })
+//         res.status.json({ err: err })
 //     }
 
 // }
-// module.exports = { createCategory ,createCategoryList}
-module.exports = { createCategory ,createCategoryList}
+module.exports = { createCategory}
+    //  ,createCategoryList}
