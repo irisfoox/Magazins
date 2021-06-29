@@ -9,19 +9,8 @@ const Pic = require('../models/pic')
 // getUserMagazins
 // getUserMagazin
 
-const mapPicF = async (pic) => {
-    const mongooseCategory = new Category({
-        name: category.name,
-        color: category.color,
-        magazinId: magazin._id
-    });
-    await mongooseCategory.save()
-    categories.push(mongooseCategory)
-    magazin.categories.push(mongooseCategory)
-}
 
 const createMagazin = async (req, res) => {
-
     try {
         const user = await User.findById(req.params.id)
         console.log(user);
@@ -30,13 +19,22 @@ const createMagazin = async (req, res) => {
             title: req.body.title,
             userId: user._id
         });
+        await magazin.save();
 
         let categories = [];
-        req.body.categories.map(mapPicF(category))
-
+        req.body.categories.map(async category => {
+            const mongooseCategory = new Category({
+                name: category.name,
+                color: category.color,
+                magazinId: magazin._id
+            });
+            await mongooseCategory.save()
+            categories.push(mongooseCategory)
+            magazin.categories.push(mongooseCategory)
+        })
 
         await magazin.save();
-        await user.magazinId.push(magazin._id);
+        await user.magazins.push(magazin._id);
         user.save();
         res.status(200).json({ massege: "ResponseOk", magazin: magazin });
     }
