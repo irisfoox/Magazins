@@ -5,7 +5,7 @@ import leader from '../pic/leader.png'
 import person from '../pic/person.png'
 import pin from '../pic/pin.png'
 import adjust from '../pic/adjust.png'
-import Home from './Home'
+import Routing from './Routing'
 
 
 export default function UpperMenu() {
@@ -27,7 +27,7 @@ export default function UpperMenu() {
         <div className="row d-inline-flex" style={{width:"100%",height:"40%"}}>
                  <div className="side col-1"></div>
                  <div className="col-9" style={{backgroundColor: "#E8EAEC"}}>
-                     <Home/>
+                     <Routing/>
                  </div>
                  <div className="col-2 ss">
 
