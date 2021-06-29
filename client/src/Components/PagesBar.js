@@ -15,10 +15,10 @@ export default function PagesBar() {
         if (index === 0) {
             //refL.current.addClassName("active");
             //list[index].className.addInnerHTML = "active";
-             return <Home/>  //name example of page to go to
+             //return <Home/>  //name example of page to go to
         } else if (index === 1) {
             //list[index].className.addInnerHTML = "active";
-             return <NewPost/>
+             //return <NewPost/>
         } else if (index === 2) {
             //list[index].className.addInnerHTML = "active";
             // return <CurrentState></CurrentState>
