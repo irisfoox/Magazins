@@ -49,6 +49,8 @@ const createMagazin = async (req, res) => {
 
 // מחזיר NUL
 // לבדוק
+//נסו populate()  בלי כלום בסוגריים
+
 const getUserMagazins = async (req, res) => {
     try {
         const user = await User.findById(req.params.userId).populate({ path: 'magazins' });
