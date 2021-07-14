@@ -1,16 +1,16 @@
 import React from 'react'
 import './App.css';
-import PagesBar from './Components/PagesBar'
+//import PagesBar from './Components/PagesBar'
 import UpperMenu from './Components/UpperMenu'
-//<PagesBar/>
+import ShowPosts from './Components/showPosts'
 
 function App() {
   return (
     <div>
       <UpperMenu/>
-      <PagesBar/>
+      <ShowPosts></ShowPosts>
     </div>
   );
-}
-
+} 
+ 
 export default App;
